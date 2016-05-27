@@ -15,7 +15,8 @@ html {
 /* Red */
 body {
   background-color: #fff;
-  font-family: 'Exo 2', sans-serif; }
+  font-family: 'Exo 2', sans-serif;
+  max-width: 940px; }
 
 .container {
   flex: 1; }
@@ -46,6 +47,9 @@ a, a:hover, a:visited {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+
+  body {
+    max-width: 320px; }
 
   .description {
     align-self: center; }
