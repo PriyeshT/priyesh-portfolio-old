@@ -171,7 +171,7 @@ a, a:hover, a:visited {
     font-size: 1.125em;
     color: black; }
 
-  .container-fluid {
+  .wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
