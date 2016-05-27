@@ -15,12 +15,9 @@ html {
 /* Red */
 body {
   background-color: #fff;
-  font-family: 'Exo 2', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+  font-family: 'Exo 2', sans-serif; }
 
-.container-fluid {
+.main {
   flex: 1; }
 
 .logo {
@@ -43,6 +40,26 @@ a, a:hover, a:visited {
   text-decoration: none;
   color: white; }
 
+@media screen and (min-width: 350px) {
+  .jumbotron {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+  .photo {
+    order: -1;
+    flex: 1 200px; } }
+@media screen and (min-width: 770px) {
+  .jumbotron {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+
+  .photo {
+    order: 1;
+    flex: 1 400px; } }
 /* Red */
 .navbar-default {
   background-color: #e74c3c;
@@ -150,7 +167,7 @@ a, a:hover, a:visited {
 
 /* Red */
 #banner {
-  margin-top: 10px;
+  margin: 10px 0 0 10px;
   font-size: 1.875em;
   font-family: Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -172,14 +189,19 @@ a, a:hover, a:visited {
     color: black; }
 
   .wrapper {
+    margin: 0 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 80vh; }
+    min-height: 75vh; }
 
   .primary, .secondary {
     flex: 1 300px;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .fb, .twitter, .linkedin {
+    margin-left: 15px;
+    font-size: 1em; } }
 @media screen and (min-width: 770px) {
   .primary {
     flex: 2 300px; }
@@ -193,7 +215,12 @@ a, a:hover, a:visited {
     align-self: center; }
 
   .secondary {
-    align-self: flex-start; } }
+    flex-grow: 1;
+    align-self: flex-start; }
+
+  .fb, .twitter, .linkedin {
+    margin-left: 15px;
+    font-size: 1.25em; } }
 .list-social {
   list-style-type: none;
   margin-top: 15px; }
@@ -207,10 +234,6 @@ a, a:hover, a:visited {
 .fa-linkedin, .linkedin {
   color: #1883BB; }
 
-.fb, .twitter, .linkedin {
-  margin-left: 15px;
-  font-size: 1.25em; }
-
 .fa-facebook-official:hover, .fb:hover {
   color: #718dc8; }
 
@@ -221,16 +244,27 @@ a, a:hover, a:visited {
   color: #50b4e9; }
 
 /* Red */
-.main-footer {
-  text-align: center;
-  background: #d9e4ea;
-  padding: 2em 0;
-  margin-top: 30px; }
+@media screen and (min-width: 350px) {
+  .main-footer {
+    background: #e74c3c;
+    padding: 2em 0;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap; }
 
-@media screen and (min-width: 770px) {
+  .list-social-footer {
+    list-style-type: none; }
+
+  .list-item-footer {
+    display: inline;
+    padding-right: 10px; }
+
   .footer-inner {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1150px; } }
+    flex-grow: 2;
+    align-self: center; }
+
+  .social-footer {
+    flex-grow: 1;
+    align-self: space-between; } }
 
 /*# sourceMappingURL=main.css.map */

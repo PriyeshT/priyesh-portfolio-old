@@ -26,17 +26,17 @@
   clear: none;
 }
 
+
 body {
   background-color: #fff;        
   font-family: 'Exo 2', sans-serif; 
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-.container-fluid {
+.main {
   flex: 1;
 }
+
+
 
 .logo {
   font-size: em(48);
@@ -60,4 +60,34 @@ a, a:hover, a:visited {
   color: white;
 }
 
+@media screen and (min-width:350px) {
+  .jumbotron {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    order: -1;
+    flex: 1 200px;
+  }
+}
+
+
+@media screen and (min-width: 770px){
+  
+  .jumbotron {
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .photo {
+    order: 1;
+    flex: 1 400px;
+  }
+
+}
 

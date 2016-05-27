@@ -1,16 +1,31 @@
 @import 'variables';
 
-.main-footer {
-	text-align: center;
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
-}
 
-@media screen and (min-width: 770px){
-	.footer-inner{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
+@media screen and (min-width: 350px){
+	.main-footer {
+		background: $bgDefault;
+		padding: 2em 0;
+		@include margin-top(30px);
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.list-social-footer {
+		list-style-type: none;
+	}
+
+	.list-item-footer {
+		display: inline;
+		padding-right: 10px;
+	}
+
+	.footer-inner {
+		flex-grow: 2;
+		align-self: center;
+	}
+
+	.social-footer {
+		flex-grow: 1;
+		align-self: space-between;
 	}
 }

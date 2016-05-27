@@ -1,7 +1,7 @@
 @import 'variables';
 
 #banner {
-      @include margin-top(10px);
+      @include margin(10px 0 0 10px);
       font-size: em(30);
       @include font-style;
     }
@@ -19,10 +19,11 @@
 	  }
 
 	.wrapper {
+    margin: 0 10px;
 		display:flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		min-height: 80vh;
+		min-height: 75vh;
 	}
 	
 
@@ -30,6 +31,11 @@
 		flex: 1 300px;
 		@include margin-top(25px);
 	}
+
+  .fb, .twitter, .linkedin {
+  margin-left: 15px;
+  font-size: em(16);
+}
 	
 }
 
@@ -50,8 +56,14 @@
   }
 
   .secondary {
+  flex-grow: 1;
   	align-self: flex-start;
   }
+
+  .fb, .twitter, .linkedin {
+  margin-left: 15px;
+  font-size: em(20);
+}
 }
 
 
@@ -70,11 +82,6 @@
 
 .fa-linkedin, .linkedin {
   color: $linkedin;
-}
-
-.fb, .twitter, .linkedin {
-  margin-left: 15px;
-  font-size: em(20);
 }
 
 .fa-facebook-official:hover, .fb:hover {
