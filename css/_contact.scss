@@ -1,0 +1,90 @@
+@import 'variables';
+
+#banner {
+      @include margin-top(10px);
+      font-size: em(30);
+      @include font-style;
+    }
+
+@media screen and (min-width: 350px){
+
+
+    #emailme {
+    	@include margin(0 0 10px 20px);
+  	}
+
+	  #email-banner, #social {
+	    font-size: em(18);
+	    color: $black;
+	  }
+
+	.container-fluid {
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-height: 80vh;
+	}
+	
+
+	.primary, .secondary {
+		flex: 1 300px;
+		@include margin-top(25px);
+	}
+	
+}
+
+@media screen and (min-width: 770px){
+
+	.primary {
+		flex: 2 300px;
+	}
+
+	#emailme {
+    @include margin(0 0 25px 20px);
+  }
+
+  #email-banner, #social {
+    font-size: em(24);
+    color: $black;
+    align-self: center;
+  }
+
+  .secondary {
+  	align-self: flex-start;
+  }
+}
+
+
+.list-social {
+  list-style-type: none;
+  @include margin-top(15px);
+}
+
+.fa-facebook-official, .fb { 
+  color: $fb;
+}
+
+.fa-twitter, .twitter {
+  color: $twitter;
+}
+
+.fa-linkedin, .linkedin {
+  color: $linkedin;
+}
+
+.fb, .twitter, .linkedin {
+  margin-left: 15px;
+  font-size: em(20);
+}
+
+.fa-facebook-official:hover, .fb:hover {
+  color: lighten($fb, 20%);
+}
+
+.fa-twitter:hover, .twitter:hover {
+  color: lighten($twitter, 20%);
+}
+
+.fa-linkedin:hover, .linkedin:hover {
+  color: lighten($linkedin, 20%);
+}

@@ -1,0 +1,56 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import 'variables';
+
+
+@mixin font-style {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: start;
+  text-indent: 0px;
+  text-transform: none;
+}
+
+@mixin margin-top ($width) {
+  margin-top: $width;
+}
+
+@mixin banner ($height) {
+  height: $height;
+  display: block;
+  clear: none;
+}
+
+body {
+  background-color: #fff;        
+  font-family: 'Exo 2', sans-serif; 
+}
+
+.logo {
+  font-size: em(48);
+  text-align: center;
+  color: gold;
+  text-shadow: -5px 10px 15px $black; }
+
+.char1 {
+  position: relative;
+  z-index: 2;
+  left: 5px; }
+
+.char2 {
+  position: relative;
+  z-index: 3;
+  left: -15px; }
+
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+

@@ -1,0 +1,127 @@
+@import 'variables';
+
+
+#contact {
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width: 350px) {
+  .primary {
+    float: none;
+    @include margin-top(25px);
+  }
+
+  .secondary {
+    float: none;
+    @include margin-top(25px);
+  }
+}
+
+@media screen and (min-width: 770px){
+  .primary {
+  @include margin-top(35px);
+  margin-bottom: 20px;
+  float: left;
+  width: 49%;
+}
+
+.secondary {
+  @include margin-top(35px);
+  float: right;
+  width: 49%;
+}
+
+}
+
+#label-name {
+  @include margin-top(8px);
+}
+
+.has-error {
+  color: red;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 350px) {
+    #banner {
+      @include margin-top(5px);
+      @include banner(40px);
+    }
+
+    #contact-intro {
+      @include margin-top(5px);
+      font-size: em(30);
+      @include font-style;
+    }
+}
+
+@media screen and (min-width: 770px) {
+  #banner {
+  @include margin-top(30px);
+  @include banner(80px);
+}
+
+#contact-intro {
+  @include margin-top(15px);
+  font-size: em(72);
+  @include font-style;
+}
+
+}
+
+@media screen and (min-width: 350px){
+  #emailme {
+    @include margin(0 0 10px 20px);
+  }
+
+  #email-banner, #social {
+    font-size: em(18);
+    color: $black;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  #emailme {
+    @include margin(0 0 25px 20px);
+  }
+
+  #email-banner, #social {
+    font-size: em(24);
+    color: $black;
+  }
+}
+
+.list-social {
+  list-style-type: none;
+  @include margin-top(15px);
+}
+
+.fa-facebook-official, .fb { 
+  color: $fb;
+}
+
+.fa-twitter, .twitter {
+  color: $twitter;
+}
+
+.fa-linkedin, .linkedin {
+  color: $linkedin;
+}
+
+.fb, .twitter, .linkedin {
+  margin-left: 15px;
+  font-size: em(20);
+}
+
+.fa-facebook-official:hover, .fb:hover {
+  color: lighten($fb, 20%);
+}
+
+.fa-twitter:hover, .twitter:hover {
+  color: lighten($twitter, 20%);
+}
+
+.fa-linkedin:hover, .linkedin:hover {
+  color: lighten($linkedin, 20%);
+}
