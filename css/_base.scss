@@ -29,6 +29,13 @@
 body {
   background-color: #fff;        
   font-family: 'Exo 2', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  flex: 1;
 }
 
 .logo {

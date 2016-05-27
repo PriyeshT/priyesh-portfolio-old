@@ -15,7 +15,13 @@ html {
 /* Red */
 body {
   background-color: #fff;
-  font-family: 'Exo 2', sans-serif; }
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.container-fluid {
+  flex: 1; }
 
 .logo {
   font-size: 3em;
@@ -213,5 +219,18 @@ a, a:hover, a:visited {
 
 .fa-linkedin:hover, .linkedin:hover {
   color: #50b4e9; }
+
+/* Red */
+.main-footer {
+  text-align: center;
+  background: #d9e4ea;
+  padding: 2em 0;
+  margin-top: 30px; }
+
+@media screen and (min-width: 770px) {
+  .footer-inner {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px; } }
 
 /*# sourceMappingURL=main.css.map */
