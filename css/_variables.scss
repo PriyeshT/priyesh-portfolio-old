@@ -1,7 +1,7 @@
 //navbar variables
 
 /* Red */
-$bgDefault      : #e74c3c;
+$bgDefault      : black;
 $bgHighlight    : #c0392b;
 $colDefault     : #ecf0f1;
 $colHover       : #ffbbbc; 
@@ -14,24 +14,20 @@ $twitter: #00ABF1;
 $linkedin: #1883BB;
 
 //projects flexbox variables
-$base-border-radius: 3px !default;
-$base-background-color: white !default;
-$dark-gray: #333 !default;
-$light-gray: #DDD !default;
-$base-font-color: $dark-gray !default;
-$flex-box-border-color: $light-gray;
-$flex-box-border: 1px solid $flex-box-border-color;
-$flex-box-background: lighten($light-gray, 10%);
-$flex-box-gutter: 0.4em;
-$flex-box-width: 18em;
-$flex-box-color: transparentize($base-font-color, 0.3);
-$flex-box-top-colors:
-tomato,
-#72BFBF,
-#92B1E3,
-#E3D743,
-#CCC,
-#F6C05C;
+$base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10%);
+  $card-header-background: $card-background;
+  $card-margin: 1em;
+  $card-image-hover-opacity: 0.7;
+  $card-image-hover-color: #F8F2B4;
 
 //footer
 $base-spacing: 1.5em !default;

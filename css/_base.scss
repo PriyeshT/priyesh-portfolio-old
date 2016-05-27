@@ -32,7 +32,7 @@ body {
   font-family: 'Exo 2', sans-serif; 
 }
 
-.main {
+.container {
   flex: 1;
 }
 
@@ -68,9 +68,24 @@ a, a:hover, a:visited {
     flex-wrap: wrap;
   }
 
+  .description {
+    align-self: center;
+
+  }
+
   .photo {
     order: -1;
     flex: 1 200px;
+  }
+
+  main-page {
+    display: block;
+    moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(img/img_01.png) no-repeat;
+    width: 180px;
+    height: 236px;
+    margin: 0 auto;
   }
 }
 
@@ -87,6 +102,15 @@ a, a:hover, a:visited {
   .photo {
     order: 1;
     flex: 1 400px;
+  }
+
+  main-page {
+    display: block;
+    moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(img/img_01.png) no-repeat;
+    width: auto;
+    height: auto;
   }
 
 }
