@@ -70,7 +70,7 @@ a, a:hover, a:visited {
   }
 
   body {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .description {
@@ -102,6 +102,10 @@ a, a:hover, a:visited {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+
+  body {
+    max-width: 100%;
   }
 
   .photo {
