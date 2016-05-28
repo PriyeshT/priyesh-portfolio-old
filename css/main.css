@@ -52,7 +52,7 @@ a, a:hover, a:visited {
     max-width: 100%; }
 
   .description {
-    align-self: center; }
+    align-self: stretch; }
 
   .photo {
     order: -1;
