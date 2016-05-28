@@ -3,7 +3,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .card {
@@ -12,9 +12,10 @@
   border: $card-border;
   border-radius: $base-border-radius;
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  //height: 25em;
   cursor: pointer;
-  flex-basis: 15em;
-  flex-grow: 1;
+  flex-basis: 25em;
+  flex-grow: 2;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   transition: all 0.2s ease-in-out;
@@ -30,6 +31,7 @@
       opacity: 1;
       transition: all 0.2s ease-in-out;
       width: 100%;
+      height: 150px;
     }
   }
 
@@ -43,6 +45,15 @@
     transition: all 0.2s ease-in-out;
   }
 
+   .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
 
   &:focus,
    {
