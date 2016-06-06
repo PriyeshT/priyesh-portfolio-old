@@ -89,6 +89,64 @@ body {
     height: 216px;
     margin: 0 auto;
   }
+
+  .portfolio-nav {
+    @include margin-top(25px);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .gi-2x{font-size: 2em;}
+
+  .separator {
+    width: 70%;
+  }
+
+  .content {
+    margin: 0 auto;
+  }
+
+  .project-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .project-detail {
+    align-self: space-between;
+  }
+
+  .project-code {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .project-tech, .project-title {
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .tech-box {
+    font-size: em(16);
+    background-color: #EEEEEE;
+    background-repeat: repeat;
+    color: rgba(26,26,26, 0.6);
+    line-height: 0px;
+    word-spacing: 0px;
+    height: 18px;
+    width: 560px;
+    padding: 19px 19px 19px 19px;
+    display: block;
+  }
+
 }
 
 
@@ -122,6 +180,10 @@ body {
     background: url(img/img_01.png) no-repeat;
     width: auto;
     height: auto;
+  }
+
+  .project-code {
+    width: 70%;
   }
 
 }
