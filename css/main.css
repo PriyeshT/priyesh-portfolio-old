@@ -454,5 +454,50 @@ body {
   .social-footer {
     flex-grow: 1;
     align-self: space-between; } }
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* Red */
+.skills-container {
+  margin-top: 20px;
+  font-size: 1.25em;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .skills-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skills-container .basic, .skills-container .sdlc, .skills-container .skills {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    .skills-container .basic:last-child, .skills-container .sdlc:last-child, .skills-container .skills:last-child {
+      margin-right: 0; }
+  .skills-container .sdlc-process, .skills-container .agile-process {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 48.21067%; }
+    .skills-container .sdlc-process:last-child, .skills-container .agile-process:last-child {
+      margin-right: 0; }
+  .skills-container .it-skills, .skills-container .frontend {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 48.21067%; }
+    .skills-container .it-skills:last-child, .skills-container .frontend:last-child {
+      margin-right: 0; }
+  .skills-container .tech-stack {
+    font-weight: 800;
+    font-size: 1.25em;
+    text-transform: uppercase; }
+  .skills-container .sdlc-heading, .skills-container .agile-heading, .skills-container .it-heading, .skills-container .frontend-heading {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

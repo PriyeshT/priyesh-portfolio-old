@@ -1,0 +1,35 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import 'variables';
+
+.skills-container {
+	@include margin-top(20px);
+	font-size: em(20);
+	@include outer-container;
+
+	.basic,.sdlc, .skills {
+		@include span-columns(8);
+		@include shift(2);
+	}
+
+	.sdlc-process, .agile-process{
+		@include span-columns(4 of 8);
+	}
+
+	.it-skills, .frontend {
+		@include span-columns(4 of 8);
+	}
+
+	.tech-stack {
+		font-weight: 800;
+		font-size: em(20);
+		text-transform: uppercase;
+	}
+
+	.sdlc-heading, .agile-heading, .it-heading, .frontend-heading {
+		text-decoration: underline;
+	}
+
+
+}
+
