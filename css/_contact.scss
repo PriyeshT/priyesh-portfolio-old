@@ -10,54 +10,85 @@
 
 
     #emailme {
-    	@include margin(0 0 10px 20px);
-  	}
+      @include margin(0 0 10px 20px);
+    }
 
-	  #email-banner, #social {
-	    font-size: em(18);
-	    color: $black;
-	  }
+    #email-banner, #social {
+      font-size: em(20);
+      color: #363636;
+    }
 
-	.wrapper {
+  .wrapper {
     margin: 0 10px;
-		display:flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		min-height: 75vh;
-	}
-	
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    min-height: 75vh;
+  }
+  
 
-	.primary, .secondary {
-		flex: 1 300px;
-		@include margin-top(25px);
-	}
+  .primary, .secondary {
+    -webkit-flex: 1 300px;
+        -ms-flex: 1 300px;
+            flex: 1 300px;
+    @include margin-top(25px);
+    color: rgba(26, 26, 26, 0.6);
+  }
+
+  .secondary {
+    margin-left: 10px;
+  }
+
+  .address {
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: em(20);
+  }
 
   .fb, .twitter, .linkedin {
   margin-left: 15px;
-  font-size: em(16);
+  font-size: em(20);
 }
-	
+
+  .social-link,.social-link:hover, .social-link:visited {
+    color: $black;
+  }
+  
 }
 
 @media screen and (min-width: 770px){
 
-	.primary {
-		flex: 2 300px;
-	}
+  .primary {
+    -webkit-flex: 2 300px;
+        -ms-flex: 2 300px;
+            flex: 2 300px;
+  }
 
-	#emailme {
+  #emailme {
     @include margin(0 0 25px 20px);
   }
 
   #email-banner, #social {
     font-size: em(24);
     color: $black;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -webkit-align-self: center;
+            align-self: center;
   }
 
   .secondary {
-  flex-grow: 1;
-  	align-self: flex-start;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+    -ms-flex-item-align: start;
+        -webkit-align-self: flex-start;
+            align-self: flex-start;
   }
 
   .fb, .twitter, .linkedin {
@@ -72,26 +103,7 @@
   @include margin-top(15px);
 }
 
-.fa-facebook-official, .fb { 
-  color: $fb;
-}
-
-.fa-twitter, .twitter {
-  color: $twitter;
-}
-
-.fa-linkedin, .linkedin {
-  color: $linkedin;
-}
-
-.fa-facebook-official:hover, .fb:hover {
-  color: lighten($fb, 20%);
-}
-
-.fa-twitter:hover, .twitter:hover {
-  color: lighten($twitter, 20%);
-}
-
-.fa-linkedin:hover, .linkedin:hover {
-  color: lighten($linkedin, 20%);
+.list-item {
+  display: inline;
+  padding: .24em;
 }

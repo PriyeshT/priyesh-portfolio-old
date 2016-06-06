@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var windowObjectReference;
+
 	$("#navigation").load('navigation.html');
 	$("#footer").load('footer.html');
 	$("#success").hide();

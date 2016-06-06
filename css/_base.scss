@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  flex: 1;
+  @include flex(1);
 }
 
 
@@ -56,17 +56,14 @@ body {
   left: -15px; }
 
 
-a, a:hover, a:visited {
-  text-decoration: none;
-  color: white;
-}
 
 @media screen and (min-width:350px) {
   .jumbotron {
     background-color: $white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include display(flex);
+    @include flex-direction(column);
+    @include flex-wrap(wrap);
+    color: rgba(26, 26, 26, 0.6);
   }
 
   body {
@@ -74,12 +71,13 @@ a, a:hover, a:visited {
   }
 
   .description {
-    align-self: stretch;
+    @include align-self(stretch);
   }
 
   .photo {
-    order: -1;
-    flex: 1 200px;
+    @include order(-1);
+    @include flex(1);
+    @include flex-basis(200px);
   }
 
   main-page {
@@ -98,18 +96,23 @@ a, a:hover, a:visited {
   
   .jumbotron {
     background-color: $white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    @include display(flex);
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
   }
 
   body {
     max-width: 100%;
   }
 
+  .description {
+    @include order(-1);
+  }
+
   .photo {
-    order: 1;
-    flex: 1 400px;
+    @inlcude order(2);
+    @include flex(1);
+    @include flex-basis(400px);
   }
 
   main-page {
