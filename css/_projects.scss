@@ -1,110 +1,12 @@
-@import 'variables';
+@import "variables";
 
-.cards {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.container {
+  margin: 20px auto;
 }
 
-.card {
-  
-  background-color: $card-background;
-  border: $card-border;
-  border-radius: $base-border-radius;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
-  //height: 25em;
-  cursor: pointer;
-  -webkit-flex-basis: 25em;
-      -ms-flex-preferred-size: 25em;
-          flex-basis: 25em;
-  -webkit-flex-grow: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  margin: 0 $card-margin $base-spacing $card-margin;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-
-  .card-button{
-    display: none;
-  }
-
-  &:hover {
-    .card-button {
-      display: inline-block;
-      margin-left: 115px;
-      margin-bottom: 5px;
-      opacity: 1;
-      background-color: $black;
-    }
-
-    .card-image, .card-header, .card-copy {
-      opacity: 0.2;
-    }
-  }
-
-  .card-image {
-    background-color: $card-image-hover-color;
-    height: 150px;
-    max-height: 150px;
-    overflow: hidden;
-
-    img {
-      @include border-top-radius($base-border-radius);
-      opacity: 1;
-      transition: all 0.2s ease-in-out;
-      width: 100%;
-      height: 150px;
-    }
-  }
-
-  .card-header {
-    background-color: $card-header-background;
-    border-bottom: $card-border;
-    border-radius: $base-border-radius $base-border-radius 0 0;
-    font-weight: bold;
-    line-height: 1.5em;
-    padding: ($base-spacing / 3) ($base-spacing / 2);
-    transition: all 0.2s ease-in-out;
-  }
-
-
-   .card-copy {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    padding: ($base-spacing / 2) ($base-spacing / 2);
-
-    p {
-      margin: 0 0 ($base-spacing / 2);
-    }
-  }
-
-  &:focus,
-   {
-    cursor: pointer;
-
-    img {
-      opacity: $card-image-hover-opacity;
-    }
-  }
-
-  &:active {
-    background-color: $card-background;
-
-    .card-header {
-      background-color: $card-background;
-    }
-  }
+.portfolio-item {
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 
-@media screen and (min-width: 350px) {
-  .container{
-    @include margin-top(30px);
-  }
-}
