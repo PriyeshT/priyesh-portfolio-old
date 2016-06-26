@@ -38,3 +38,15 @@ $base-spacing: 1.5em !default;
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+// colors
+
+$color-1: #383838; // Mine Shaft
+$color-2: #7b9d6f; // Highland
+$color-3: #ffffff; // White
+$color-4: #f8f8f8; // Alabaster
+
+// fonts 
+
+$primary-font: 'Fira Sans', sans-serif;
+$secondary-font: 'Playfair Display', serif;

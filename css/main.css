@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2);
+@import "https://fonts.googleapis.com/css?family=Baloo+Bhai";
 html {
   box-sizing: border-box; }
 
@@ -13,9 +13,13 @@ html {
   box-sizing: inherit; }
 
 /* Red */
+html, body {
+  width: 100%;
+  height: 100%; }
+
 body {
   background-color: #fff;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Baloo Bhai', sans-serif;
   max-width: 940px; }
 
 .container {
@@ -223,6 +227,10 @@ body {
 
   .project-code {
     width: 70%; } }
+#hire:hover {
+  background-color: black;
+  border-color: black; }
+
 /* Red */
 .navbar-default {
   background-color: black;
@@ -327,8 +335,15 @@ body {
     margin-left: 15px;
     font-size: 1.25em; }
 
-  .social-link, .social-link:hover, .social-link:visited {
-    color: black; } }
+  .fa {
+    color: #C9302C; }
+
+  .fa:hover {
+    color: black; }
+
+  #contact-submit:hover {
+    background-color: black;
+    border-color: black; } }
 @media screen and (min-width: 770px) {
   .primary {
     -webkit-flex: 2 300px;
@@ -369,6 +384,7 @@ body {
   .main-footer {
     background: black;
     padding: 2em 0;
+    position: absolute;
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap; }
@@ -432,5 +448,10 @@ html {
     text-transform: uppercase; }
   .skills-container .sdlc-heading, .skills-container .agile-heading, .skills-container .it-heading, .skills-container .frontend-heading {
     text-decoration: underline; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
 
 /*# sourceMappingURL=main.css.map */

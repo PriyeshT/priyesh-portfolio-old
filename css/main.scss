@@ -1,6 +1,7 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
-@import url(https://fonts.googleapis.com/css?family=Exo+2);
+//@import url(https://fonts.googleapis.com/css?family=Exo+2);
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
 @import 'variables';
 @import 'base';
 @import 'navigation';
@@ -9,6 +10,8 @@
 @import 'footer';
 @import 'skills';
 
-
-
-
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+}

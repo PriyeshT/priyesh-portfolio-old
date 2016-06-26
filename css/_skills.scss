@@ -1,11 +1,18 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import 'variables';
+@import 'mixins'; // custom mixins
+@import 'layout'; // responsive grid and media queries
 
 .skills-container {
 	@include margin-top(20px);
 	font-size: em(20);
 	@include outer-container;
+
+	$outline-width: 0;
+	$break-point: 500px;
+	$gray-base:     #999999;
+	$brand-primary: #3498DB;
 
 	.basic,.sdlc, .skills {
 		@include span-columns(8);

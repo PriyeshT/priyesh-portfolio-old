@@ -56,8 +56,17 @@
   font-size: em(20);
 }
 
-  .social-link,.social-link:hover, .social-link:visited {
-    color: $black;
+  .fa {
+    color: #C9302C;
+  }
+
+  .fa:hover {
+    color: black;
+  }
+
+  #contact-submit:hover {
+    background-color: black;
+    border-color: black;
   }
   
 }
@@ -107,3 +116,5 @@
   display: inline;
   padding: .24em;
 }
+
+
